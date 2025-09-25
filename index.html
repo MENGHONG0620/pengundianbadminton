@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pengundian Jawatankuasa Kelab Badminton</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body style="padding-top: 40px;">
+    <header class="header" id="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 0.2rem 0; margin-bottom: 0; border-radius: 0; transition: all 0.3s ease;">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-trophy"></i> Kelab Badminton
+                </a>
+                <div class="nav-links">
+                    <a href="results.php" class="btn btn-secondary">
+                        <i class="fas fa-chart-bar"></i> Keputusan
+                    </a>
+                    <a href="login.php" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i> Log Masuk
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>🏸 SISTEM PENGUNDIAN JAWATANKUASA KELAB BADMINTON</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 2.5rem; opacity: 0.9;">Mengundi pengerusi, setiausaha, bendahari dan jawatankuasa lain yang utama dalam Kelab Badminton SMJK Chung Ling</p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="login.php" class="btn btn-primary lift-on-hover" style="font-size: 1.1rem; padding: 1.2rem 2.5rem; border-radius: 12px;">
+                        <i class="fas fa-sign-in-alt"></i> Log Masuk
+                    </a>
+                    <a href="register.php" class="btn btn-secondary lift-on-hover" style="font-size: 1.1rem; padding: 1.2rem 2.5rem; border-radius: 12px;">
+                        <i class="fas fa-user-plus"></i> Daftar Akaun Baru
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="card-grid">
+                <div class="card lift-on-hover">
+                    <div style="text-align: center; padding: 1rem;">
+                        <i class="fas fa-users floating-element" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3 style="margin-bottom: 1rem; color: var(--dark); font-size: 1.3rem;">4 Jawatan Utama</h3>
+                        <p style="color: #6b7280; line-height: 1.6;">Pengerusi, Setiausaha, Bendahari dan Jawatankuasa Lain untuk Kelab Badminton</p>
+                    </div>
+                </div>
+                
+                <div class="card lift-on-hover">
+                    <div style="text-align: center; padding: 1rem;">
+                        <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: var(--success); margin-bottom: 1.5rem;"></i>
+                        <h3 style="margin-bottom: 1rem; color: var(--dark); font-size: 1.3rem;">Pengundian Selamat</h3>
+                        <p style="color: #6b7280; line-height: 1.6;">Satu undi untuk setiap jawatan dengan langkah keselamatan yang ketat.</p>
+                    </div>
+                </div>
+                
+                <div class="card lift-on-hover">
+                    <div style="text-align: center; padding: 1rem;">
+                        <i class="fas fa-chart-line" style="font-size: 2.5rem; color: var(--info); margin-bottom: 1.5rem;"></i>
+                        <h3 style="margin-bottom: 1rem; color: var(--dark); font-size: 1.3rem;">Keputusan Langsung</h3>
+                        <p style="color: #6b7280; line-height: 1.6;">Pengiraan undi masa nyata dengan carta dinamik untuk setiap jawatan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; background: var(--gradient); color: white; margin: 3rem -2rem 0 -2rem; padding: 3rem 2rem; border-radius: 16px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); width: calc(100% + 4rem); border-bottom: 3px solid rgba(255, 255, 255, 0.3);">
+                <h2 style="margin-bottom: 0.8rem; font-size: 1.7rem;">🚀 Sedia untuk Mengundi?</h2>
+                <p style="margin-bottom: 2rem; opacity: 0.9; font-size: 1rem;">Daftar akaun baru dan pilih calon terbaik untuk setiap jawatan!</p>
+                <a href="register.php" class="btn" style="background: white; color: var(--primary); font-weight: bold; padding: 1rem 2rem; border-radius: 12px; font-size: 1.1rem; transition: all 0.3s ease;">
+                    <i class="fas fa-rocket"></i> Mula Sekarang
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255,255,255,0.05)';
+                navbar.style.backdropFilter = 'blur(15px)';
+            } else {
+                navbar.style.background = 'rgba(255,255,255,0.1)';
+                navbar.style.backdropFilter = 'blur(20px)';
+            }
+        });
+    </script>
+</body>
+</html>
